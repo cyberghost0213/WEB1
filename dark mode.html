@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark mode</title>
+</head>
+<body>
+    <h1><a href="https://namu.wiki/w/%EC%9B%94%EB%93%9C%20%EC%99%80%EC%9D%B4%EB%93%9C%20%EC%9B%B9?from=%EC%9B%B9">Web</a></h1>
+    <!-- <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    "> -->
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+        }
+    ">
+
+    <ol>
+        <li a href="">HTML</li>
+        <li a href="">CSS</li>
+        <li a href="">JavaScript</li>
+    </ol>
+    <h2>JavaSciprt란 무엇인가?</h2>
+    <p><span id="first" class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] <span class="js">JavaScript</span> is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript</span> is one of the core technologies of the World Wide Web.[8] <span class="js">JavaScript</span> enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.</p>   
+
+</body>
+</html>
